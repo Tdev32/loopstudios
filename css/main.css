@@ -9,4 +9,8 @@ html {
           box-sizing: border-box;
   text-decoration: none;
 }
+
+body {
+  background-color: orangered;
+}
 /*# sourceMappingURL=main.css.map */

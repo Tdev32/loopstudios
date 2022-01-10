@@ -1,3 +1,10 @@
-@import "base/reset";
+// Import files
 
+
+// - BASE
+@import "base/reset";
+@import "base/typography";
+
+// - PAGES
 @import "pages/header";
+@import "pages/home";

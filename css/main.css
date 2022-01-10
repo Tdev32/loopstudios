@@ -10,11 +10,46 @@ html {
   text-decoration: none;
 }
 
+.heading-primary {
+  color: white;
+  font-size: 6rem;
+  font-weight: 100;
+  line-height: 5.2rem;
+  font-family: 'Alata', serif;
+  text-transform: uppercase;
+  padding: 3rem;
+  border: 1px solid white;
+}
+
+.header__logo-box {
+  color: white;
+}
+
+.header__nav-link {
+  color: white;
+}
+
 .header {
   height: 95vh;
   background-image: url(/images/desktop/image-hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section-banner {
+  position: absolute;
+  top: 20%;
+  left: 10%;
 }
 /*# sourceMappingURL=main.css.map */

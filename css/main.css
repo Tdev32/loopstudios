@@ -52,4 +52,55 @@ html {
   top: 20%;
   left: 10%;
 }
+
+.footer {
+  background-color: black;
+  color: white;
+}
+
+.footer__row {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1200px;
+}
+
+.footer__attribution {
+  width: 100%;
+  text-align: center;
+}
+
+.section-creations {
+  display: -ms-grid;
+  display: grid;
+  margin: 0 auto;
+  width: 1200px;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.section-creations .group-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  grid-column: span 4;
+}
+
+.section-creations .img {
+  width: 100%;
+}
+
+.section-about {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
 /*# sourceMappingURL=main.css.map */

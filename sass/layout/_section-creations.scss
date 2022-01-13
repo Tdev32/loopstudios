@@ -1,0 +1,16 @@
+.section-creations {
+    display: grid;
+    margin: 0 auto;
+    width: 1200px;
+    grid-template-columns: repeat(4, 1fr);
+    
+    .group-1 {
+        display: flex;
+        justify-content: space-between;
+        grid-column: span 4;
+    }
+
+    .img {
+        width: 100%;
+    }
+}     

@@ -1,0 +1,26 @@
+//////////////////////////
+// MEDIA QUERY MANAGER //
+////////////////////////
+
+@mixin platform($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: $phone) {
+      @content;
+    }
+  } 
+  @else if $breakpoint == tab-portrait {
+    @media only screen and (max-width: $tab-portrait) {
+      @content;
+    }
+  }
+  @else if $breakpoint == tab-landscape {
+    @media only screen and (max-width: $tab-landscape) {
+      @content;
+    }
+  }
+  @else if $breakpoint == desktop {
+    @media only screen and (max-width: $desktop) {
+      @content;
+    }
+  }
+}

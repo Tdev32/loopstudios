@@ -1,0 +1,55 @@
+@mixin line-structure($width) {
+  height: 3px;
+  width: $width;
+  border-radius: 2px;
+  background-color: white;
+}
+
+@mixin linePosition($position) {
+  position: absolute;
+  display: block;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: $position;
+}
+
+@mixin absPosition {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// Menu button
+.menu-button {
+  height: 60px;
+  width: 60px;
+  position: relative;
+  display: none;
+  position: absolute;
+  top: 7rem;
+  right: 7rem;
+
+  @include platform(tab-landscape) {
+    display: block;
+  }
+
+  // Middle line
+  span {
+    @include absPosition;
+    @include line-structure(60%);
+
+    // Top line
+    &::before {
+      @include linePosition(9px);
+      @include line-structure(100%);
+    }
+
+    // Bottom line
+    &::after {
+      @include linePosition(-9px);
+      @include line-structure(100%);
+    }
+  }
+}

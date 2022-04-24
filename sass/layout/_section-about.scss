@@ -1,4 +1,41 @@
 .section-about {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  margin-top: 10rem;
+
+  .container {
+    position: relative;
+
+    .player-1 {
+      height: 30%;
+    }
+
+    .text-box {
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+      height: 62%;
+      width: 52%;
+      padding: 2rem 0 0 2rem;
+      background-color: white;
+
+      .heading-secondary {
+        font-family: 'Alata', sans-serif;
+        text-transform: uppercase;
+        font-weight: 100;
+        font-size: 3.7rem;
+        width: 40rem;
+        margin: 8rem auto 0 auto;
+      }
+
+      p {
+        font-family: 'Alata', sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: .6px;
+        color: #989898;
+        width: 34.2rem;
+        line-height: 20px;
+        margin: 3rem auto 0 9.3rem;
+      }
+    }
+  }
 }

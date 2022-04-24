@@ -1,0 +1,58 @@
+.header {
+    height: 95vh;
+    background-image: url(/images/desktop/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo-box {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 4rem;
+        font-weight: 900;
+        margin-top: 8rem;
+    }
+
+    &__nav {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1.6rem;
+        font-weight: 900;
+        margin-top: 8rem;
+        display: flex;
+        width: 400px;
+        justify-content: space-between;
+        align-items: center;
+
+        @include platform(tab-landscape) {
+            display: none !important;
+        }
+    }
+}
+
+.heading-primary {
+    display: inline-block;
+    width: 490px;
+    color: white;
+    font-size: 6rem;
+    font-weight: 100;
+    line-height: 5.2rem;
+    font-family: 'Alata', sans-serif;
+    text-transform: uppercase;
+    padding: 3rem;
+    border: 1px solid white;
+}
+
+.header {
+    &__logo-box {
+        color: white;
+    }
+
+    &__nav-link {
+        color: white;
+    }
+}

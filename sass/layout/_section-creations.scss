@@ -1,16 +1,33 @@
 .section-creations {
-    display: grid;
-    margin: 0 auto;
-    width: 1200px;
-    grid-template-columns: repeat(4, 1fr);
+    margin: 10rem auto;
+    
     
     .group-1 {
         display: flex;
         justify-content: space-between;
-        grid-column: span 4;
+
+        .heading-secondary {
+            font-family: 'Alata', sans-serif;
+            font-weight: 100;
+            font-size: 4rem;
+        }
+        
+        .btn {
+            background-color: transparent;
+            text-transform: uppercase;
+            border: 1px solid black;
+            letter-spacing: 2px;
+            font-size: 1.3rem;
+            width: 11.6rem;
+            height: 3.5rem;
+        }
     }
 
-    .img {
-        width: 100%;
+    .img-gallery {
+        display: grid;
+        margin-top: 5rem;
+        grid-template-columns: repeat(4, 256px);
+        justify-content: space-between;
+        row-gap: 38px;
     }
 }     

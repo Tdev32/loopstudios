@@ -1,15 +1,19 @@
 // Import files
 
+// - ABSTRACTS
+@import "abstracts/media-query-manager";
 
 // - BASE
 @import "base/reset";
-@import "base/typography";
+@import "base/variables";
 
-// - PAGES
-@import "pages/header";
-@import "pages/home";
-@import "pages/footer";
+// - COMPONENTS
+@import "components/menu-button";
+@import "components/side-menu";
 
 // - LAYOUT
-@import "layout/section-creations";
+@import "layout/header";
 @import "layout/section-about";
+@import "layout/section-banner";
+@import "layout/section-creations";
+@import "layout/footer";

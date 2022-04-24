@@ -1,0 +1,57 @@
+.footer {
+    background-color: black;
+    color: white;
+    
+    &__row {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+
+        .logo-box {
+            margin-top: 2rem;
+            font-family: 'Alata', sans-serif;
+            font-size: 2rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            width: 30rem;
+            margin-bottom: 2rem;
+
+            a {
+                font-family: 'Kanit', sans-serif;
+                color: white;
+
+            }
+        }
+    }
+
+    &__attribution {
+        color: gray;
+        width: 100%;
+        text-align: center;
+
+        a {
+            color: inherit;
+        }
+    }
+
+    .socials {
+        margin-top: 2rem;
+        width: 11rem;
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            width: auto;
+            height: 72%;
+        }
+    }
+
+    .copyright {
+        font-family: 'Kanit', sans-serif;
+        font-size: 1.2rem;
+        color: gray;
+    }
+}

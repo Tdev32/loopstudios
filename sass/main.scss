@@ -2,6 +2,7 @@
 
 // - ABSTRACTS
 @import "abstracts/media-query-manager";
+@import "abstracts/mixins";
 
 // - BASE
 @import "base/reset";
@@ -14,6 +15,5 @@
 // - LAYOUT
 @import "layout/header";
 @import "layout/section-about";
-@import "layout/section-banner";
 @import "layout/section-creations";
 @import "layout/footer";

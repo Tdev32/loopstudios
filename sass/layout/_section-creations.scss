@@ -1,10 +1,19 @@
 .section-creations {
     margin: 10rem auto;
+
+    @include platform(tab-landscape) {
+        margin: 0 auto;
+    }
     
     
     .group-1 {
         display: flex;
         justify-content: space-between;
+
+        @include platform(tab-landscape) {
+            flex-direction: column;
+            text-align: center;
+        }
 
         .heading-secondary {
             font-family: 'Alata', sans-serif;
@@ -20,6 +29,10 @@
             font-size: 1.3rem;
             width: 11.6rem;
             height: 3.5rem;
+
+            @include platform(tab-landscape) {
+                margin: 3rem auto 0 auto;
+            }
         }
     }
 
@@ -29,5 +42,15 @@
         grid-template-columns: repeat(4, 256px);
         justify-content: space-between;
         row-gap: 38px;
+
+        @include platform(tab-landscape) {
+            grid-template-columns: repeat(2, 1fr);
+            width: 100%;
+            grid-gap: 1rem;
+        }
+
+        & > * {
+            max-width: 100%;
+        }
     }
 }     

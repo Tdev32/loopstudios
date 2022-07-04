@@ -1,9 +1,0 @@
-.section-banner {
-  position: absolute;
-  top: 34%;
-  left: 10%;
-
-  @include platform(desktop) {
-    left: 26%;
-  }
-}

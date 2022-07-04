@@ -13,6 +13,11 @@
       @content;
     }
   }
+  @else if $breakpoint == tablet {
+    @media only screen and (max-width: $tablet) {
+      @content;
+    }
+  }
   @else if $breakpoint == tab-landscape {
     @media only screen and (max-width: $tab-landscape) {
       @content;
@@ -23,4 +28,16 @@
       @content;
     }
   }
+
+  @else if $breakpoint == desktop-lg {
+    @media only screen and (max-width: $desktop-lg) {
+      @content;
+    }
+  }
 }
+
+// @media only screen and (max-width: 950px and max-height: 550px) {
+//   .heading-primary {
+//     display: none;
+//   }
+// }

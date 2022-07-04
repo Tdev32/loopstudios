@@ -1,40 +1,116 @@
 .section-about {
   margin-top: 10rem;
+  position: relative;
+  height: 100%;
+
+  @include platform(tab-landscape) {
+    width: 100%;
+    display: flex;
+    
+  }
 
   .container {
-    position: relative;
+
+    @include platform(desktop-lg) {
+      display: flex;
+      flex-direction: column;
+    }
 
     .player-1 {
-      height: 30%;
+      width: 56%;
+
+      @include platform(desktop-lg) {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      @include platform(tab-landscape) {
+        width: 80vw;
+        height: auto;
+        margin: 0 auto;
+      }
     }
 
     .text-box {
+      height: 67%;
+      width: 40.2%;
+      display: inline-block;
+      background-color: hsl(0, 0%, 100%);
+      padding: 8rem;
       position: absolute;
-      right: 0px;
-      bottom: 0px;
-      height: 62%;
-      width: 52%;
-      padding: 2rem 0 0 2rem;
-      background-color: white;
+      right: 21rem;
+      bottom: -2rem;
+
+      @include platform(desktop-lg) {
+        position: static;
+        padding: 0;
+        width: 100%;
+      }
+
+      @include platform(tab-landscape) {
+        position: static;
+        width: 100%;
+        padding: 0;
+        height: auto;
+      }
 
       .heading-secondary {
         font-family: 'Alata', sans-serif;
         text-transform: uppercase;
         font-weight: 100;
-        font-size: 3.7rem;
+        font-size: 4rem;
         width: 40rem;
-        margin: 8rem auto 0 auto;
+        margin-left: 3rem;
+        margin-bottom: 3rem;
+
+        @include platform(desktop-lg) {
+          width: 100%;
+          margin: 0;
+          margin-top: 3rem;
+          text-align: center;
+        }
+
+        @include platform(tab-landscape) {
+          font-size: 4rem;
+          text-align: center;
+        }
+
+        @include platform(phone) {
+          width: 100%;
+        }
       }
 
       p {
+        display: inline-block;
         font-family: 'Alata', sans-serif;
-        font-size: 1rem;
-        font-weight: 600;
+        font-size: 1.3rem;
         letter-spacing: .6px;
         color: #989898;
-        width: 34.2rem;
-        line-height: 20px;
-        margin: 3rem auto 0 9.3rem;
+        width: 42rem;
+        line-height: 18px;
+        margin-left: 3rem;
+
+        @include platform(desktop-lg) {
+          width: 100%;
+          margin: 0;
+          text-align: center;
+          margin-top: 3rem;
+          font-size: 1.8rem;
+          line-height: 2.4rem;
+        }
+
+        @include platform(tab-landscape) {
+          margin: 2rem auto 8rem auto;
+          width: 100%;
+          font-size: 2rem;
+          text-align: center;
+          line-height: 28px;
+        }
+
+        @include platform(tablet) {
+          font-size: 1.2rem;
+          line-height: 22px
+        }
       }
     }
   }

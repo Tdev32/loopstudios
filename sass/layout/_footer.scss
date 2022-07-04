@@ -19,6 +19,10 @@
             width: 30rem;
             margin-bottom: 2rem;
 
+            @include platform(tab-landscape) {
+                width: 22rem;
+            }
+
             a {
                 font-family: 'Kanit', sans-serif;
                 color: white;
@@ -31,9 +35,22 @@
         color: gray;
         width: 100%;
         text-align: center;
+        padding-bottom: 1rem;
 
         a {
             color: inherit;
+        }
+    }
+
+    .row-2 {
+        @include platform(tab-landscape) {
+            flex-direction: column;
+            text-align: right;
+            margin-bottom: 2rem;
+        }
+
+        nav {
+            margin-bottom: 2rem;
         }
     }
 

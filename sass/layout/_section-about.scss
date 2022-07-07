@@ -80,10 +80,7 @@
 
         @include platform(phone) {
           width: 100%;
-          margin: 3rem auto 0 auto;
           text-align: center;
-          margin-left: 0;
-          color: red;
         }
       }
 

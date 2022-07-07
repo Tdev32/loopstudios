@@ -115,6 +115,12 @@
           font-size: 1.2rem;
           line-height: 22px
         }
+
+        @include platform(phone) {
+          font-size: 2rem;
+          line-height: 4rem;
+          width: 100%;
+        }
       }
     }
   }

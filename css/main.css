@@ -336,6 +336,14 @@ html, body {
   }
 }
 
+@media only screen and (max-width: 450px) {
+  .section-about .container .text-box p {
+    font-size: 2rem;
+    line-height: 4rem;
+    width: 100%;
+  }
+}
+
 .section-creations {
   margin: 10rem auto;
 }

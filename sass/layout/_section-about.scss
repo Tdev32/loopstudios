@@ -48,9 +48,7 @@
       }
 
       @include platform(tab-landscape) {
-        position: static;
         width: 100%;
-        padding: 0;
         height: auto;
       }
 
@@ -59,6 +57,7 @@
       }
 
       .heading-secondary {
+        display: inline-block;
         font-family: 'Alata', sans-serif;
         text-transform: uppercase;
         font-weight: 100;
@@ -81,7 +80,7 @@
 
         @include platform(phone) {
           width: 100%;
-          margin-right: 2rem;
+          margin: 3rem auto 0 auto;
         }
       }
 

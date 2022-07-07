@@ -54,6 +54,10 @@
         height: auto;
       }
 
+      @include platform(phone) {
+        width: 100%;
+      }
+
       .heading-secondary {
         font-family: 'Alata', sans-serif;
         text-transform: uppercase;
@@ -77,6 +81,7 @@
 
         @include platform(phone) {
           width: 100%;
+          margin-right: 2rem;
         }
       }
 
